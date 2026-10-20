@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biodata Diri – Abrar</title>
+<style>
+:root{
+  --bg1:#e0e7ff; --bg2:#fce7f3; --card:#ffffff; --text:#1e1b3a; --muted:#6b6785; --line:#eceaf6;
+  --g1:#4f46e5; --g2:#243cc4; --g3:#2537b9;
+  --c-blue:#dbeafe; --c-pink:#fce7f3; --c-green:#dcfce7; --c-amber:#fef3c7; --c-purple:#ede9fe;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg1:#12112a; --bg2:#1f1030; --card:#1a1830; --text:#f1efff; --muted:#a29fc0; --line:#2b2848;
+    --c-blue:#1e2a52; --c-pink:#4d28bc; --c-green:#173a2a; --c-amber:#46361a; --c-purple:#2c2457;
+  }
+}
+:root[data-theme="dark"]{
+  --bg1:#12112a; --bg2:#1f1030; --card:#1a1830; --text:#f1efff; --muted:#a29fc0; --line:#2b2848;
+  --c-blue:#1e2a52; --c-pink:#43173b; --c-green:#173a2a; --c-amber:#46361a; --c-purple:#2c2457;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; min-height:100vh; color:var(--text);
+  background:linear-gradient(135deg,var(--bg1),var(--bg2)) fixed;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  line-height:1.6; padding:28px 16px 40px;
+}
+.card{
+  max-width:600px; margin:0 auto; background:var(--card);
+  border-radius:24px; overflow:hidden;
+  box-shadow:0 20px 50px rgba(79,70,229,.22);
+  animation:rise .6s ease both;
+}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+header{
+  position:relative; text-align:center; color:#fff;
+  padding:40px 24px 64px;
+  background:linear-gradient(135deg,var(--g1),var(--g2) 55%,var(--g3));
+}
+header::before,header::after{
+  content:""; position:absolute; border-radius:50%; background:rgba(255,255,255,.14);
+}
+header::before{width:180px;height:180px;top:-60px;left:-50px}
+header::after{width:140px;height:140px;bottom:-50px;right:-30px}
+header>*{position:relative}
+.avatar{
+  width:108px; height:108px; border-radius:50%; margin:0 auto 14px;
+  background:#fff; color:var(--g1);
+  display:flex; align-items:center; justify-content:center;
+  font-size:48px; font-weight:800;
+  border:5px solid rgba(255,255,255,.55);
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+h1{margin:0; font-size:1.9rem; letter-spacing:.02em}
+.role{
+  display:inline-block; margin-top:8px; padding:4px 16px; border-radius:999px;
+  background:rgba(255,255,255,.22); font-size:.9rem; font-weight:600;
+}
+.body{margin-top:-32px; position:relative; padding:0 18px 8px}
+section{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:18px; padding:18px 18px 14px; margin-bottom:14px;
+  box-shadow:0 6px 18px rgba(79,70,229,.08);
+}
+h2{
+  margin:0 0 12px; font-size:1rem; display:flex; align-items:center; gap:8px;
+  background:linear-gradient(90deg,var(--g1),var(--g2));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+h2 span{font-size:1.2rem; -webkit-text-fill-color:initial}
+.row{display:flex; align-items:center; gap:12px; padding:8px 0}
+.row + .row{border-top:1px dashed var(--line)}
+.ico{
+  flex:none; width:38px; height:38px; border-radius:12px;
+  display:flex; align-items:center; justify-content:center; font-size:1.1rem;
+}
+.b{background:var(--c-blue)} .p{background:var(--c-pink)} .g{background:var(--c-green)}
+.a{background:var(--c-amber)} .v{background:var(--c-purple)}
+.lbl{font-size:.75rem; color:var(--muted)}
+.val{font-weight:600; overflow-wrap:anywhere}
+p{margin:0 0 4px}
+.chips{display:flex; flex-wrap:wrap; gap:8px; padding-bottom:4px}
+.chip{
+  padding:6px 14px; border-radius:999px; font-size:.85rem; font-weight:600;
+  border:1px solid var(--line);
+}
+footer{text-align:center; padding:6px 16px 22px; font-size:.8rem; color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="card">
+  <header>
+    <div class="avatar">A</div>
+    <h1>Abrar</h1>
+    <span class="role">🎓 Mahasiswa Informatika</span>
+  </header>
+
+  <div class="body">
+    <section>
+      <h2><span>👤</span> Data Pribadi</h2>
+      <div class="row"><div class="ico b">🪪</div><div><div class="lbl">Nama</div><div class="val">Mohamad Abrar Hafiz</div></div></div>
+      <div class="row"><div class="ico p">🎂</div><div><div class="lbl">Tempat, Tanggal Lahir</div><div class="val">Pontianak,23-03-2026</div></div></div>
+      <div class="row"><div class="ico v">⚧</div><div><div class="lbl">Jenis Kelamin</div><div class="val">Laki-laki</div></div></div>
+      <div class="row"><div class="ico g">🏠</div><div><div class="lbl">Alamat</div><div class="val">Jalan Tabrani Ahmad Komp doraniska indah no 4a</div></div></div>
+      <div class="row"><div class="ico a">✉️</div><div><div class="lbl">Email</div><div class="val">241220058@unmuhpnk.ac.id</div></div></div>
+    </section>
+
+    <section>
+      <h2><span>🏫</span> Pendidikan</h2>
+      <div class="row"><div class="ico b">🎓</div><div><div class="lbl">Perguruan Tinggi</div><div class="val">Universitas Muhammadiyah Pontianak</div></div></div>
+      <div class="row"><div class="ico g">💻</div><div><div class="lbl">Program Studi</div><div class="val">Informatika</div></div></div>
+    </section>
+
+    <section>
+      <h2><span>✨</span> Tentang Saya</h2>
+      <p>Saya mahasiswa Informatika yang senang belajar tentang pemograman mobile</p>
+    </section>
+
+    <section>
+      <h2><span>🚀</span> Minat &amp; Hobi</h2>
+      <div class="chips">
+        <span class="chip" style="background:var(--c-blue)">🌐 Pemrograman Web</span>
+        <span class="chip" style="background:var(--c-pink)">🎨 Interaksi Manusia &amp; Komputer</span>
+        <span class="chip" style="background:var(--c-purple)">🤖 Kecerdasan Buatan</span>
+        <span class="chip" style="background:var(--c-amber)">⭐ [Hobi lainnya]</span>
+      </div>
+    </section>
+  </div>
+
+  <footer>241220058@unmuhpnk.ac.id</footer>
+</main>
+</body>
+</html>
